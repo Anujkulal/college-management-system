@@ -129,7 +129,7 @@ const AddStudent = () => {
           id="firstname"
           value={data.firstName}
           onChange={(e) => setData({ ...data, firstName: e.target.value })}
-          className="w-full bg-blue-100 rounded-2xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          className="w-full bg-indigo-200 rounded-2xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
         />
       </div>
       <div className="w-[40%]">
@@ -141,7 +141,7 @@ const AddStudent = () => {
           id="middlename"
           value={data.middleName}
           onChange={(e) => setData({ ...data, middleName: e.target.value })}
-          className="w-full bg-blue-100 rounded-2xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          className="w-full bg-indigo-200 rounded-2xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
         />
       </div>
       <div className="w-[40%]">
@@ -153,7 +153,7 @@ const AddStudent = () => {
           id="lastname"
           value={data.lastName}
           onChange={(e) => setData({ ...data, lastName: e.target.value })}
-          className="w-full bg-blue-100 rounded-2xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          className="w-full bg-indigo-200 rounded-2xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
         />
       </div>
       <div className="w-[40%]">
@@ -165,7 +165,7 @@ const AddStudent = () => {
           id="enrollmentNo"
           value={data.enrollmentNo}
           onChange={(e) => setData({ ...data, enrollmentNo: e.target.value })}
-          className="w-full bg-blue-100 rounded-2xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          className="w-full bg-indigo-200 rounded-2xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
         />
       </div>
       <div className="w-[40%]">
@@ -177,7 +177,7 @@ const AddStudent = () => {
           id="email"
           value={data.email}
           onChange={(e) => setData({ ...data, email: e.target.value })}
-          className="w-full bg-blue-100 rounded-2xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          className="w-full bg-indigo-200 rounded-2xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
         />
       </div>
       <div className="w-[40%]">
@@ -189,7 +189,7 @@ const AddStudent = () => {
           id="phoneNumber"
           value={data.phoneNumber}
           onChange={(e) => setData({ ...data, phoneNumber: e.target.value })}
-          className="w-full bg-blue-100 rounded-2xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          className="w-full bg-indigo-200 rounded-2xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
         />
       </div>
       <div className="w-[40%]">
@@ -198,7 +198,7 @@ const AddStudent = () => {
         </label>
         <select
           id="semester"
-          className="px-2 bg-blue-100 py-3 rounded-2xl text-base w-full accent-blue-700 mt-1"
+          className="px-2 bg-indigo-200 py-3 rounded-2xl text-base w-full accent-indigo-200 mt-1"
           value={data.semester}
           onChange={(e) => setData({ ...data, semester: e.target.value })}
         >
@@ -219,7 +219,7 @@ const AddStudent = () => {
         </label>
         <select
           id="branch"
-          className="px-2 bg-blue-100 py-3 rounded-2xl text-base w-full accent-blue-700 mt-1"
+          className="px-2 bg-indigo-200 py-3 rounded-2xl text-base w-full accent-indigo-200 mt-1"
           value={data.branch}
           onChange={(e) => setData({ ...data, branch: e.target.value })}
         >
@@ -239,7 +239,7 @@ const AddStudent = () => {
         </label>
         <select
           id="gender"
-          className="px-2 bg-blue-100 py-3 rounded-2xl text-base w-full accent-blue-700 mt-1"
+          className="px-2 bg-indigo-200 py-3 rounded-2xl text-base w-full accent-indigo-200 mt-1"
           value={data.gender}
           onChange={(e) => setData({ ...data, gender: e.target.value })}
         >
@@ -254,7 +254,7 @@ const AddStudent = () => {
         </label>
         <label
           htmlFor="file"
-          className="px-2 bg-blue-100 py-3 rounded-2xl text-base w-full flex justify-center items-center cursor-pointer"
+          className="px-2 bg-indigo-200 py-3 rounded-2xl text-base w-full flex justify-center items-center cursor-pointer"
         >
           Upload
           <span className="ml-2">

@@ -85,8 +85,8 @@ const Home = () => {
       {load && (
         <>
           <Navbar />
-          <div className="max-w-6xl mx-auto flex w-full">
-            <ul className="flex justify-center gap-10 w-1/5 mx-auto my-8 flex-col items-center p-5 rounded-3xl bg-gray-300">
+          <div className="max-w-6xl mx-auto flex w-full bg-gray-200 rounded-3xl p-5">
+            <ul className="flex justify-center gap-10 w-1/5 mx-auto my-8 flex-col items-center p-5 rounded-3xl bg-gray-50">
               <li
                 className={`text-center rounded-3xl px-4 py-2 w-28 cursor-pointer ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all hover:scale-125 ${
                   selectedMenu === "Profile"

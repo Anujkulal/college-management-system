@@ -157,24 +157,24 @@ const EditStudent = () => {
   return (
     <div className="my-6 mx-auto w-full">
       <form
-        className="flex justify-center items-center border-2 border-blue-500 rounded w-[40%] mx-auto"
+        className="flex justify-center items-center border-2 border-indigo-500 rounded-3xl w-[40%] mx-auto"
         onSubmit={searchStudentHandler}
       >
         <input
           type="text"
-          className="px-6 py-3 w-full outline-none"
+          className="px-6 py-3 w-full outline-none rounded-3xl"
           placeholder="Enrollment No."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
         {!searchActive && (
-          <button className="px-4 text-2xl hover:text-blue-500" type="submit">
+          <button className="px-4 text-2xl hover:text-indigo-500 ease-linear duration-300 hover:scale-125" type="submit">
             <FiSearch />
           </button>
         )}
         {searchActive && (
           <button
-            className="px-4 text-2xl hover:text-blue-500"
+            className="px-4 text-2xl hover:text-indigo-500"
             onClick={clearSearchHandler}
           >
             <FiX />
@@ -195,7 +195,7 @@ const EditStudent = () => {
               id="firstname"
               value={data.firstName}
               onChange={(e) => setData({ ...data, firstName: e.target.value })}
-              className="w-full bg-blue-50 rounded border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-indigo-50 rounded border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="w-[40%]">
@@ -207,7 +207,7 @@ const EditStudent = () => {
               id="middlename"
               value={data.middleName}
               onChange={(e) => setData({ ...data, middleName: e.target.value })}
-              className="w-full bg-blue-50 rounded border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-indigo-50 rounded border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="w-[40%]">
@@ -219,7 +219,7 @@ const EditStudent = () => {
               id="lastname"
               value={data.lastName}
               onChange={(e) => setData({ ...data, lastName: e.target.value })}
-              className="w-full bg-blue-50 rounded border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-indigo-50 rounded border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="w-[40%]">
@@ -234,7 +234,7 @@ const EditStudent = () => {
               onChange={(e) =>
                 setData({ ...data, enrollmentNo: e.target.value })
               }
-              className="w-full bg-blue-50 rounded border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-indigo-50 rounded border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="w-[40%]">
@@ -246,7 +246,7 @@ const EditStudent = () => {
               id="email"
               value={data.email}
               onChange={(e) => setData({ ...data, email: e.target.value })}
-              className="w-full bg-blue-50 rounded border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-indigo-50 rounded border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="w-[40%]">
@@ -260,7 +260,7 @@ const EditStudent = () => {
               onChange={(e) =>
                 setData({ ...data, phoneNumber: e.target.value })
               }
-              className="w-full bg-blue-50 rounded border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-indigo-50 rounded border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="w-[40%]">
@@ -270,7 +270,7 @@ const EditStudent = () => {
             <select
               disabled
               id="semester"
-              className="px-2 bg-blue-50 py-3 rounded-sm text-base w-full accent-blue-700 mt-1"
+              className="px-2 bg-indigo-50 py-3 rounded-sm text-base w-full accent-indigo-700 mt-1"
               value={data.semester}
               onChange={(e) => setData({ ...data, semester: e.target.value })}
             >
@@ -292,7 +292,7 @@ const EditStudent = () => {
             <select
               disabled
               id="branch"
-              className="px-2 bg-blue-50 py-3 rounded-sm text-base w-full accent-blue-700 mt-1"
+              className="px-2 bg-indigo-50 py-3 rounded-sm text-base w-full accent-indigo-700 mt-1"
               value={data.branch}
               onChange={(e) => setData({ ...data, branch: e.target.value })}
             >
@@ -312,7 +312,7 @@ const EditStudent = () => {
             </label>
             <select
               id="gender"
-              className="px-2 bg-blue-50 py-3 rounded-sm text-base w-full accent-blue-700 mt-1"
+              className="px-2 bg-indigo-50 py-3 rounded-sm text-base w-full accent-indigo-700 mt-1"
               value={data.gender}
               onChange={(e) => setData({ ...data, gender: e.target.value })}
             >
@@ -326,7 +326,7 @@ const EditStudent = () => {
             </label>
             <label
               htmlFor="file"
-              className="px-2 bg-blue-50 py-3 rounded-sm text-base w-full flex justify-center items-center cursor-pointer"
+              className="px-2 bg-indigo-50 py-3 rounded-sm text-base w-full flex justify-center items-center cursor-pointer"
             >
               Upload
               <span className="ml-2">
@@ -358,7 +358,7 @@ const EditStudent = () => {
           )}
           <button
             type="submit"
-            className="bg-blue-500 px-6 py-3 rounded-sm mb-6 text-white"
+            className="bg-indigo-500 px-6 py-3 rounded-sm mb-6 text-white"
           >
             Update Student
           </button>
