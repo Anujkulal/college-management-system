@@ -135,24 +135,24 @@ const EditFaculty = () => {
   return (
     <div className="my-6 mx-auto w-full">
       <form
-        className="flex justify-center items-center border-2 border-blue-500 rounded w-[40%] mx-auto"
+        className="flex justify-center items-center border-2 border-indigo-500 rounded-3xl w-[40%] mx-auto"
         onSubmit={searchFacultyHandler}
       >
         <input
           type="text"
-          className="px-6 py-3 w-full outline-none"
+          className="px-6 py-3 w-full outline-none rounded-3xl"
           placeholder="Employee Id."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
         {!searchActive && (
-          <button className="px-4 text-2xl hover:text-blue-500" type="submit">
+          <button className="px-4 text-2xl hover:text-indigo-500 ease-linear duration-300 hover:scale-125" type="submit">
             <FiSearch />
           </button>
         )}
         {searchActive && (
           <button
-            className="px-4 text-2xl hover:text-blue-500"
+            className="px-4 text-2xl hover:text-indigo-500"
             onClick={clearSearchHandler}
           >
             <FiX />
@@ -173,7 +173,7 @@ const EditFaculty = () => {
               id="firstname"
               value={data.firstName}
               onChange={(e) => setData({ ...data, firstName: e.target.value })}
-              className="w-full bg-blue-50 rounded border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-indigo-200 rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="w-[40%]">
@@ -185,7 +185,7 @@ const EditFaculty = () => {
               id="middlename"
               value={data.middleName}
               onChange={(e) => setData({ ...data, middleName: e.target.value })}
-              className="w-full bg-blue-50 rounded border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-indigo-200 rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="w-[40%]">
@@ -197,7 +197,7 @@ const EditFaculty = () => {
               id="lastname"
               value={data.lastName}
               onChange={(e) => setData({ ...data, lastName: e.target.value })}
-              className="w-full bg-blue-50 rounded border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-indigo-200 rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="w-[40%]">
@@ -210,7 +210,7 @@ const EditFaculty = () => {
               id="employeeId"
               value={data.employeeId}
               onChange={(e) => setData({ ...data, employeeId: e.target.value })}
-              className="w-full bg-blue-50 rounded border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-indigo-200 rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="w-[40%]">
@@ -224,7 +224,7 @@ const EditFaculty = () => {
               onChange={(e) =>
                 setData({ ...data, phoneNumber: e.target.value })
               }
-              className="w-full bg-blue-50 rounded border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-indigo-200 rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="w-[40%]">
@@ -236,7 +236,7 @@ const EditFaculty = () => {
               id="email"
               value={data.email}
               onChange={(e) => setData({ ...data, email: e.target.value })}
-              className="w-full bg-blue-50 rounded border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-indigo-200 rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="w-[40%]">
@@ -248,7 +248,7 @@ const EditFaculty = () => {
               id="post"
               value={data.post}
               onChange={(e) => setData({ ...data, post: e.target.value })}
-              className="w-full bg-blue-50 rounded border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-indigo-200 rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="w-[40%]">
@@ -260,7 +260,7 @@ const EditFaculty = () => {
               id="experience"
               value={data.experience}
               onChange={(e) => setData({ ...data, experience: e.target.value })}
-              className="w-full bg-blue-50 rounded border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-indigo-200 rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="w-[40%]">
@@ -269,7 +269,7 @@ const EditFaculty = () => {
             </label>
             <label
               htmlFor="file"
-              className="px-2 bg-blue-50 py-3 rounded-sm text-base w-full flex justify-center items-center cursor-pointer"
+              className="px-2 bg-indigo-200 py-3 rounded-3xl text-base w-full flex justify-center items-center cursor-pointer"
             >
               Upload
               <span className="ml-2">
@@ -306,7 +306,7 @@ const EditFaculty = () => {
           )}
           <button
             type="submit"
-            className="bg-blue-500 px-6 py-3 rounded-sm mb-6 text-white"
+            className="bg-indigo-500 p-3 rounded-3xl mb-6 text-white hover:bg-indigo-700 ease-linear duration-300 hover:scale-110"
           >
             Update Faculty
           </button>

@@ -179,13 +179,13 @@ const Notice = () => {
   };
 
   return (
-    <div className="w-full mx-auto flex justify-center items-start flex-col my-10">
+    <div className="w-full mx-auto flex items-start flex-col my-10 p-5">
       <div className="relative flex justify-between items-center w-full">
         <Heading title="Notices" />
         {(router.pathname === "/faculty" || router.pathname === "/admin") &&
           (open ? (
             <button
-              className="absolute right-2 flex justify-center items-center border-2 border-red-500 px-3 py-2 rounded text-red-500"
+              className="absolute right-2 flex justify-center items-center border-2 border-red-500 px-3 py-2 rounded-3xl text-red-500 ease-linear duration-300 hover:scale-110"
               onClick={openHandler}
             >
               <span className="mr-2">
@@ -195,7 +195,7 @@ const Notice = () => {
             </button>
           ) : (
             <button
-              className="absolute right-2 flex justify-center items-center border-2 border-red-500 px-3 py-2 rounded text-red-500"
+              className="absolute right-2 flex justify-center items-center border-2 border-red-500 px-3 py-2 rounded-3xl text-red-500 ease-linear duration-300 hover:scale-110"
               onClick={openHandler}
             >
               Add Notice
@@ -212,22 +212,22 @@ const Notice = () => {
               return (
                 <div
                   key={item._id}
-                  className="border-blue-500 border-2 w-full rounded-md shadow-sm py-4 px-6 mb-4 relative"
+                  className="border-indigo-500 border-2 w-full rounded-3xl shadow-sm py-4 px-6 mb-4 relative"
                 >
                   {(router.pathname === "/faculty" ||
                     router.pathname === "/admin") && (
                     <div className="absolute flex justify-center items-center right-4 bottom-3">
-                      <span className="text-sm bg-blue-500 px-4 py-1 text-white rounded-full">
+                      <span className="text-sm bg-indigo-500 px-4 py-1 text-white rounded-full">
                         {item.type}
                       </span>
                       <span
-                        className="text-2xl group-hover:text-blue-500 ml-2 cursor-pointer hover:text-red-500"
+                        className="text-2xl group-hover:text-indigo-500 ml-2 cursor-pointer hover:text-red-500"
                         onClick={() => deleteNoticehandler(item._id)}
                       >
                         <MdDeleteOutline />
                       </span>
                       <span
-                        className="text-2xl group-hover:text-blue-500 ml-2 cursor-pointer hover:text-blue-500"
+                        className="text-2xl group-hover:text-indigo-500 ml-2 cursor-pointer hover:text-indigo-500"
                         onClick={() => setOpenEditSectionHandler(index)}
                       >
                         <MdEditNote />
@@ -242,7 +242,7 @@ const Notice = () => {
                   >
                     {item.title}
                     {item.link && (
-                      <span className="text-2xl group-hover:text-blue-500 ml-1">
+                      <span className="text-2xl group-hover:text-indigo-500 ml-1">
                         <IoMdLink />
                       </span>
                     )}
@@ -274,7 +274,7 @@ const Notice = () => {
             <input
               type="text"
               id="title"
-              className="bg-blue-50 py-2 px-4 w-full mt-1"
+              className="bg-indigo-200 rounded-3xl py-2 px-4 w-full mt-1"
               value={data.title}
               onChange={(e) => setData({ ...data, title: e.target.value })}
             />
@@ -285,7 +285,7 @@ const Notice = () => {
               id="title"
               cols="30"
               rows="4"
-              className="bg-blue-50 py-2 px-4 w-full mt-1 resize-none"
+              className="bg-indigo-200 rounded-3xl py-2 px-4 w-full mt-1 resize-none"
               value={data.description}
               onChange={(e) =>
                 setData({ ...data, description: e.target.value })
@@ -298,7 +298,7 @@ const Notice = () => {
               type="text"
               id="link"
               value={data.link}
-              className="bg-blue-50 py-2 px-4 w-full mt-1"
+              className="bg-indigo-200 rounded-3xl py-2 px-4 w-full mt-1"
               onChange={(e) => setData({ ...data, link: e.target.value })}
             />
           </div>
@@ -306,7 +306,7 @@ const Notice = () => {
             <label htmlFor="type">Type Of Notice</label>
             <select
               id="type"
-              className="px-2 bg-blue-50 py-3 rounded-sm text-base w-[80%] accent-blue-700 mt-4"
+              className="px-2 bg-indigo-200 py-3 rounded-3xl text-base w-[80%] accent-indigo-700 mt-4"
               value={data.type}
               onChange={(e) => setData({ ...data, type: e.target.value })}
             >
@@ -318,7 +318,7 @@ const Notice = () => {
           {edit && (
             <button
               onClick={updateNoticehandler}
-              className="bg-blue-500 text-white mt-6 px-6 rounded text-lg py-2 hover:bg-blue-600"
+              className="bg-indigo-500 text-white mt-6 px-6 rounded-3xl text-lg py-2 hover:bg-indigo-700 ease-linear duration-300 hover:scale-110"
             >
               Update Notice
             </button>
@@ -326,7 +326,7 @@ const Notice = () => {
           {!edit && (
             <button
               onClick={addNoticehandler}
-              className="bg-blue-500 text-white mt-6 px-6 rounded text-lg py-2 hover:bg-blue-600"
+              className="bg-indigo-500 text-white mt-6 px-6 rounded-3xl text-lg py-2 hover:bg-indigo-700 ease-linear duration-300 hover:scale-110"
             >
               Add Notice
             </button>
