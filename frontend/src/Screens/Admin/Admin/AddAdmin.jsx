@@ -100,7 +100,7 @@ const AddAdmin = () => {
           id="firstname"
           value={data.firstName}
           onChange={(e) => setData({ ...data, firstName: e.target.value })}
-          className="w-full bg-indigo-200  rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          className="w-full bg-white  rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
         />
       </div>
       <div className="w-[40%]">
@@ -112,7 +112,7 @@ const AddAdmin = () => {
           id="middlename"
           value={data.middleName}
           onChange={(e) => setData({ ...data, middleName: e.target.value })}
-          className="w-full bg-indigo-200  rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          className="w-full bg-white  rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
         />
       </div>
       <div className="w-[40%]">
@@ -124,7 +124,7 @@ const AddAdmin = () => {
           id="lastname"
           value={data.lastName}
           onChange={(e) => setData({ ...data, lastName: e.target.value })}
-          className="w-full bg-indigo-200  rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          className="w-full bg-white  rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
         />
       </div>
       <div className="w-[40%]">
@@ -136,7 +136,7 @@ const AddAdmin = () => {
           id="employeeId"
           value={data.employeeId}
           onChange={(e) => setData({ ...data, employeeId: e.target.value })}
-          className="w-full bg-indigo-200  rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          className="w-full bg-white  rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
         />
       </div>
       <div className="w-[40%]">
@@ -148,7 +148,7 @@ const AddAdmin = () => {
           id="email"
           value={data.email}
           onChange={(e) => setData({ ...data, email: e.target.value })}
-          className="w-full bg-indigo-200  rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          className="w-full bg-white  rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
         />
       </div>
       <div className="w-[40%]">
@@ -160,7 +160,7 @@ const AddAdmin = () => {
           id="phoneNumber"
           value={data.phoneNumber}
           onChange={(e) => setData({ ...data, phoneNumber: e.target.value })}
-          className="w-full bg-indigo-200  rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          className="w-full bg-white  rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
         />
       </div>
       <div className="w-[40%]">
@@ -169,7 +169,7 @@ const AddAdmin = () => {
         </label>
         <select
           id="gender"
-          className="px-2 bg-indigo-200  py-3 rounded-3xl text-base w-full accent-indigo-700 mt-1"
+          className="px-2 bg-white  py-3 rounded-3xl text-base w-full accent-indigo-700 mt-1"
           value={data.gender}
           onChange={(e) => setData({ ...data, gender: e.target.value })}
         >
@@ -185,7 +185,7 @@ const AddAdmin = () => {
         </label>
         <label
           htmlFor="file"
-          className="px-2 bg-indigo-200  py-3 rounded-3xl text-base w-full flex justify-center items-center cursor-pointer"
+          className="px-2 bg-white  py-3 rounded-3xl text-base w-full flex justify-center items-center cursor-pointer"
         >
           Upload
           <span className="ml-2">

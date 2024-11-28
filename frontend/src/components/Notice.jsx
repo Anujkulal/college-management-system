@@ -212,7 +212,7 @@ const Notice = () => {
               return (
                 <div
                   key={item._id}
-                  className="border-indigo-500 border-2 w-full rounded-3xl shadow-sm py-4 px-6 mb-4 relative"
+                  className="border-indigo-500 bg-white border-2 w-full rounded-3xl shadow-sm py-4 px-6 mb-4 relative"
                 >
                   {(router.pathname === "/faculty" ||
                     router.pathname === "/admin") && (
@@ -274,7 +274,7 @@ const Notice = () => {
             <input
               type="text"
               id="title"
-              className="bg-indigo-200 rounded-3xl py-2 px-4 w-full mt-1"
+              className="bg-white rounded-3xl py-2 px-4 w-full mt-1"
               value={data.title}
               onChange={(e) => setData({ ...data, title: e.target.value })}
             />
@@ -285,7 +285,7 @@ const Notice = () => {
               id="title"
               cols="30"
               rows="4"
-              className="bg-indigo-200 rounded-3xl py-2 px-4 w-full mt-1 resize-none"
+              className="bg-white rounded-3xl py-2 px-4 w-full mt-1 resize-none"
               value={data.description}
               onChange={(e) =>
                 setData({ ...data, description: e.target.value })
@@ -298,7 +298,7 @@ const Notice = () => {
               type="text"
               id="link"
               value={data.link}
-              className="bg-indigo-200 rounded-3xl py-2 px-4 w-full mt-1"
+              className="bg-white rounded-3xl py-2 px-4 w-full mt-1"
               onChange={(e) => setData({ ...data, link: e.target.value })}
             />
           </div>
@@ -306,7 +306,7 @@ const Notice = () => {
             <label htmlFor="type">Type Of Notice</label>
             <select
               id="type"
-              className="px-2 bg-indigo-200 py-3 rounded-3xl text-base w-[80%] accent-indigo-700 mt-4"
+              className="px-2 bg-white py-3 rounded-3xl text-base w-[80%] accent-indigo-700 mt-4"
               value={data.type}
               onChange={(e) => setData({ ...data, type: e.target.value })}
             >

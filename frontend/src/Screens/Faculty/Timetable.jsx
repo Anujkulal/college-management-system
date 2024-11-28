@@ -79,7 +79,7 @@ const Timetable = () => {
       });
   };
   return (
-    <div className="w-full mx-auto mt-10 flex justify-center items-start flex-col mb-10">
+    <div className="w-full mx-auto mt-10 flex justify-center items-start flex-col mb-10 p-5">
       <div className="flex justify-between items-center w-full">
         <Heading title={`Upload Timetable`} />
       </div>
@@ -88,7 +88,7 @@ const Timetable = () => {
           <p className="mb-4 text-xl font-medium">Add Timetable</p>
           <select
             id="branch"
-            className="px-2 bg-blue-50 py-3 rounded-sm text-base w-[80%] accent-blue-700 mt-4"
+            className="px-2 bg-white py-3 rounded-3xl text-base w-[80%] accent-indigo-700 mt-4"
             value={addselected.branch}
             onChange={(e) =>
               setAddSelected({ ...addselected, branch: e.target.value })
@@ -111,7 +111,7 @@ const Timetable = () => {
             value={addselected.semester}
             name="branch"
             id="branch"
-            className="px-2 bg-blue-50 py-3 rounded-sm text-base w-[80%] accent-blue-700 mt-4"
+            className="px-2 bg-white py-3 rounded-3xl text-base w-[80%] accent-indigo-700 mt-4"
           >
             <option defaultValue>-- Select Semester --</option>
             <option value="1">1st Semester</option>
@@ -126,7 +126,7 @@ const Timetable = () => {
           {!addselected.link && (
             <label
               htmlFor="upload"
-              className="px-2 bg-blue-50 py-3 rounded-sm text-base w-[80%] mt-4 flex justify-center items-center cursor-pointer"
+              className="px-2 bg-white py-3 rounded-3xl text-base w-[80%] mt-4 flex justify-center items-center cursor-pointer"
             >
               Select Timetable
               <span className="ml-2">
@@ -136,7 +136,7 @@ const Timetable = () => {
           )}
           {previewUrl && (
             <p
-              className="px-2 border-2 border-blue-500 py-2 rounded text-base w-[80%] mt-4 flex justify-center items-center cursor-pointer"
+              className="px-2 border-2 border-indigo-500 py-2 rounded text-base w-[80%] mt-4 flex justify-center items-center cursor-pointer"
               onClick={() => {
                 setFile("");
                 setPreviewUrl("");
@@ -157,7 +157,7 @@ const Timetable = () => {
             onChange={handleFileChange}
           />
           <button
-            className="bg-blue-500 text-white mt-8 px-4 py-2 rounded-sm"
+            className="bg-indigo-500 text-white mt-8 px-4 py-2 rounded-3xl ease-linear duration-300 hover:scale-110"
             onClick={addTimetableHandler}
           >
             Add Timetable

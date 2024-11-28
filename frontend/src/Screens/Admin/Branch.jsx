@@ -115,7 +115,7 @@ const Branch = () => {
               id="name"
               value={data.name}
               onChange={(e) => setData({ ...data, name: e.target.value })}
-              className="w-full bg-indigo-200 rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-white rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <button
@@ -134,7 +134,7 @@ const Branch = () => {
                 return (
                   <li
                     key={index}
-                    className="bg-indigo-300 rounded-3xl py-3 px-6 mb-3 flex justify-between items-center w-[70%]"
+                    className="bg-white rounded-3xl py-3 px-6 mb-3 flex justify-between items-center w-[70%]"
                   >
                     <div>{item.name}</div>
                     <button

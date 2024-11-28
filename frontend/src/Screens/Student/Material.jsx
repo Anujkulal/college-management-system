@@ -55,7 +55,7 @@ const Material = () => {
   };
 
   return (
-    <div className="w-full mx-auto mt-10 flex justify-center items-start flex-col mb-10">
+    <div className="w-full mx-auto mt-10 flex justify-center items-start flex-col mb-10 p-5">
       <Heading title="Material" />
       <div className="mt-8 w-full flex justify-center items-center flex-col">
         <div className="flex justify-center items-center w-[40%]">
@@ -64,7 +64,7 @@ const Material = () => {
             name="subject"
             id="subject"
             onChange={onSelectChangeHandler}
-            className="px-2 bg-blue-50 py-3 rounded-sm text-base accent-blue-700"
+            className="px-2 bg-white py-3 rounded-3xl text-base accent-indigo-700"
           >
             <option defaultValue value="select">
               -- Select Subject --
@@ -80,7 +80,7 @@ const Material = () => {
           </select>
           <button
             onClick={getSubjectMaterial}
-            className="bg-blue-500 text-white py-3 px-4 text-2xl rounded-sm"
+            className="bg-indigo-500 text-white py-3 px-4 text-2xl rounded-full ml-4 ease-linear duration-300 hover:scale-125"
           >
             <HiOutlineSearch />
           </button>
@@ -91,7 +91,7 @@ const Material = () => {
               return (
                 <div
                   key={index}
-                  className="border-blue-500 border-2 w-full rounded-md shadow-sm py-4 px-6 relative mb-4"
+                  className="bg-white border-indigo-500 border-2 w-full rounded-3xl shadow-sm py-4 px-6 relative mb-4"
                 >
                   <p
                     className={`text-xl font-medium flex justify-start items-center ${
@@ -107,7 +107,7 @@ const Material = () => {
                   >
                     {item.title}{" "}
                     {item.link && (
-                      <span className="text-2xl group-hover:text-blue-500 ml-1">
+                      <span className="text-2xl group-hover:text-indigo-500 ml-1">
                         <IoMdLink />
                       </span>
                     )}

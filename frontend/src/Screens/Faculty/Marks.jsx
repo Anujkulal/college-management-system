@@ -125,12 +125,12 @@ const Marks = () => {
   };
 
   return (
-    <div className="w-full mx-auto flex justify-center items-start flex-col my-10">
+    <div className="w-full mx-auto flex justify-center items-start flex-col my-10 p-5">
       <div className="relative flex justify-between items-center w-full">
         <Heading title={`Upload Marks`} />
         {studentData && (
           <button
-            className="absolute right-2 flex justify-center items-center border-2 border-red-500 px-3 py-2 rounded text-red-500"
+            className="absolute right-2 flex justify-center items-center border-2 border-red-500 px-3 py-2 rounded-3xl text-red-500 ease-linear duration-300 hover:scale-110"
             onClick={resetValueHandler}
           >
             <span className="mr-2">
@@ -149,7 +149,7 @@ const Marks = () => {
               </label>
               <select
                 id="branch"
-                className="px-2 bg-blue-50 py-3 rounded-sm text-base w-full accent-blue-700 mt-1"
+                className="px-2 bg-white py-3 rounded-3xl text-base w-full accent-indigo-700 mt-1"
                 value={selected.branch}
                 onChange={(e) =>
                   setSelected({ ...selected, branch: e.target.value })
@@ -172,7 +172,7 @@ const Marks = () => {
               </label>
               <select
                 id="semester"
-                className="px-2 bg-blue-50 py-3 rounded-sm text-base w-full accent-blue-700 mt-1"
+                className="px-2 bg-white py-3 rounded-3xl text-base w-full accent-indigo-700 mt-1"
                 value={selected.semester}
                 onChange={(e) =>
                   setSelected({ ...selected, semester: e.target.value })
@@ -195,7 +195,7 @@ const Marks = () => {
               </label>
               <select
                 id="subject"
-                className="px-2 bg-blue-50 py-3 rounded-sm text-base w-full accent-blue-700 mt-1"
+                className="px-2 bg-white py-3 rounded-3xl text-base w-full accent-indigo-700 mt-1"
                 value={selected.subject}
                 onChange={(e) =>
                   setSelected({ ...selected, subject: e.target.value })
@@ -218,7 +218,7 @@ const Marks = () => {
               </label>
               <select
                 id="examType"
-                className="px-2 bg-blue-50 py-3 rounded-sm text-base w-full accent-blue-700 mt-1"
+                className="px-2 bg-white py-3 rounded-3xl text-base w-full accent-indigo-700 mt-1"
                 value={selected.examType}
                 onChange={(e) =>
                   setSelected({ ...selected, examType: e.target.value })
@@ -231,7 +231,7 @@ const Marks = () => {
             </div>
           </div>
           <button
-            className="bg-blue-50 px-4 py-2 mt-8 mx-auto rounded border-2 border-blue-500 text-black"
+            className="bg-indigo-500 px-4 py-2 mt-8 mx-auto rounded-3xl border-2 border-indigo-500 text-white ease-linear duration-300 hover:scale-110"
             onClick={loadStudentDetails}
           >
             Load Student Data
@@ -252,15 +252,15 @@ const Marks = () => {
               return (
                 <div
                   key={student.enrollmentNo}
-                  className="w-[30%] flex justify-between items-center border-2 border-blue-500 rounded"
+                  className="w-[45%] flex justify-between items-center border-2 border-indigo-500 rounded-3xl"
                   id={student.enrollmentNo}
                 >
-                  <p className="text-lg px-4 w-1/2 bg-blue-50">
+                  <p className="text-lg px-4 w-1/2">
                     {student.enrollmentNo}
                   </p>
                   <input
                     type="number"
-                    className="px-6 py-2 focus:ring-0 outline-none w-1/2"
+                    className="px-6 py-2 focus:ring-0 outline-none w-1/2 rounded-3xl"
                     placeholder="Enter Marks"
                     id={`${student.enrollmentNo}marks`}
                   />
@@ -269,7 +269,7 @@ const Marks = () => {
             })}
           </div>
           <button
-            className="bg-blue-500 px-6 py-3 mt-8 mx-auto rounded text-white"
+            className="bg-indigo-500 px-6 py-3 mt-8 mx-auto rounded-3xl text-white ease-linear duration-300 hover:scale-110"
             onClick={submitMarksHandler}
           >
             Upload Student Marks

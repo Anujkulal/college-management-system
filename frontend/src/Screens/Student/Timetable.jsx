@@ -36,7 +36,7 @@ const Timetable = () => {
   }, [userData, userData.branch, userData.semester]);
 
   return (
-    <div className="w-full mx-auto mt-10 flex justify-center items-start flex-col mb-10">
+    <div className="w-full mx-auto mt-10 flex justify-center items-start flex-col mb-10 p-5">
       <div className="flex justify-between items-center w-full">
         <Heading title={`Timetable of Semester ${userData.semester}`} />
         {timetable && (

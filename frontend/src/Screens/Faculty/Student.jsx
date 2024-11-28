@@ -80,28 +80,28 @@ const Student = () => {
   };
 
   return (
-    <div className="w-full mx-auto mt-10 flex justify-center items-start flex-col mb-10">
+    <div className="w-full mx-auto mt-10 flex justify-center items-start flex-col mb-10 p-5">
       <div className="flex justify-between items-center w-full">
         <Heading title="Student Details" />
       </div>
       <div className="my-6 mx-auto w-full">
         <form
-          className="flex justify-center items-center border-2 border-blue-500 rounded w-[40%] mx-auto"
+          className="flex justify-center items-center border-2 border-indigo-500 rounded-3xl w-[40%] mx-auto"
           onSubmit={searchStudentHandler}
         >
           <input
             type="text"
-            className="px-6 py-3 w-full outline-none"
+            className="px-6 py-3 w-full outline-none rounded-3xl"
             placeholder="Enrollment No."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
-          <button className="px-4 text-2xl hover:text-blue-500" type="submit">
+          <button className="px-4 text-2xl hover:text-indigo-500 ease-linear duration-300 hover:scale-125" type="submit">
             <FiSearch />
           </button>
         </form>
         {id && (
-          <div className="mx-auto w-full bg-blue-50 mt-10 flex justify-between items-center p-10 rounded-md shadow-md">
+          <div className="mx-auto w-full bg-white mt-10 flex justify-between items-center p-10 rounded-3xl shadow-md">
             <div>
               <p className="text-2xl font-semibold">
                 {data.firstName} {data.middleName} {data.lastName}
@@ -128,7 +128,7 @@ const Student = () => {
               // src={process.env.REACT_APP_MEDIA_LINK + "/" + data.profile}
               src={import.meta.env.VITE_MEDIA_LINK + "/" + data.profile}
               alt="student profile"
-              className="h-[200px] w-[200px] object-cover rounded-lg shadow-md"
+              className="h-[200px] w-[200px] object-cover rounded-full shadow-md"
             />
           </div>
         )}
