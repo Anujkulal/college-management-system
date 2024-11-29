@@ -108,7 +108,8 @@ const Subjects = () => {
               Enter Subject Code
             </label>
             <input
-              type="number"
+              // type="number"
+              type="text"
               id="code"
               value={data.code}
               onChange={(e) => setData({ ...data, code: e.target.value })}

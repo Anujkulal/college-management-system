@@ -206,7 +206,8 @@ const EditFaculty = () => {
             </label>
             <input
               disabled
-              type="number"
+              // type="number"
+              type="text"
               id="employeeId"
               value={data.employeeId}
               onChange={(e) => setData({ ...data, employeeId: e.target.value })}

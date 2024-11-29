@@ -8,7 +8,8 @@ const mongoURI = "mongodb://localhost:27017/College-Management-System";
 
 const connectToMongo = () => {
   mongoose
-    .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+    // .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+    .connect(mongoURI)
     .then(() => {
       console.log("Connected to MongoDB Successfully");
     })

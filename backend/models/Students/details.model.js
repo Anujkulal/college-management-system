@@ -2,7 +2,8 @@ const mongoose = require("mongoose");
 
 const studentDetails = new mongoose.Schema({
   enrollmentNo: {
-    type: Number,
+    // type: Number,
+    type: String,
     // required: true,
   },
   firstName: {

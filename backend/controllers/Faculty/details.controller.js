@@ -90,7 +90,7 @@ const deleteDetails = async (req, res) => {
 
 const getCount = async (req, res) => {
     try {
-        let user = await facultyDetails.count(req.body);
+        let user = await facultyDetails.countDocuments(req.body);
         const data = {
             success: true,
             message: "Count Successfull!",

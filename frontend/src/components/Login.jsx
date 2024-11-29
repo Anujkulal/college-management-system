@@ -104,7 +104,8 @@ const Login = () => {
               {selected && selected} Login ID
             </label>
             <input
-              type="number"
+              // type="number"
+              type="text"
               id="eno"
               required
               className="bg-gray-300 outline-none border-2 border-transparent py-2 px-4 rounded-3xl w-full focus:border-indigo-700"

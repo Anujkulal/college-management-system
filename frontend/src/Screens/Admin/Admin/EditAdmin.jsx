@@ -196,8 +196,10 @@ const EditAdmin = () => {
               Enter Employee Id
             </label>
             <input
-              type="number"
+              // type="number"
+              type="text"
               id="employeeId"
+              disabled
               value={data.employeeId}
               onChange={(e) => setData({ ...data, employeeId: e.target.value })}
               className="w-full bg-white rounded-3xl border focus:border-dark-green focus:bg-secondary-light focus:ring-2 focus:ring-light-green text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"

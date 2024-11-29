@@ -228,7 +228,8 @@ const EditStudent = () => {
             </label>
             <input
               disabled
-              type="number"
+              // type="number"
+              type="text"
               id="enrollmentNo"
               value={data.enrollmentNo}
               onChange={(e) =>
@@ -268,7 +269,7 @@ const EditStudent = () => {
               Semester
             </label>
             <select
-              disabled
+              // disabled
               id="semester"
               className="px-2 bg-white py-3 rounded-3xl  text-base w-full accent-indigo-700 mt-1"
               value={data.semester}
@@ -290,7 +291,7 @@ const EditStudent = () => {
               Branch
             </label>
             <select
-              disabled
+              // disabled
               id="branch"
               className="px-2 bg-white py-3 rounded-3xl  text-base w-full accent-indigo-700 mt-1"
               value={data.branch}

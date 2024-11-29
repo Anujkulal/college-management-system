@@ -6,7 +6,8 @@ const Subject = new mongoose.Schema({
     required: true,
   },
   code: {
-    type: Number,
+    // type: Number,
+    type: String,
     required: true,
   }
 }, { timestamps: true });
